@@ -7,29 +7,88 @@
     tools:context=".MainActivity"
     android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="220dp"
+    <RelativeLayout
+        android:layout_width="205dp"
         android:layout_height="730dp"
         android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Team A"
+        android:id="@+id/team_A"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/points_A"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="+3 points"
+        android:onClick="three_A_add"
+        android:id="@+id/three_A"
+        android:layout_below="@+id/points_A"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/two_A"
+        android:layout_below="@+id/three_A"
+        android:textSize="20sp"
+        android:text="+2 points"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/one_A"
+        android:text="Free Throw"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/two_A"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="225dp"
+    <RelativeLayout
+        android:layout_width="205dp"
         android:layout_height="730dp"
         android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AA"
-        android:textSize="20sp"/>
-
-    </LinearLayout>
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="Team B"
+        android:textSize="20sp"
+        android:id="@+id/team_B"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="+3 points"
+        android:onClick="three_B_add"
+        android:id="@+id/three_B"
+        android:layout_below="@+id/team_B"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 points"
+        android:textSize="20sp"
+        android:id="@+id/two_B"
+        android:layout_below="@+id/three_B"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/one_B"
+        android:layout_below="@+id/two_B"
+        android:text="Free Throw"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
 </LinearLayout>
