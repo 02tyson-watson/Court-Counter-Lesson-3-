@@ -1,26 +1,35 @@
 0<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
 
-    <Lay
+    <LinearLayout
         android:layout_width="220dp"
-        android:layout_height="800dp">
+        android:layout_height="730dp"
+        android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:textSize="20sp"/>
 
-    </Lay>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="225dp"
-        android:layout_height="800dp">
+        android:layout_height="730dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AA"
+        android:textSize="20sp"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
