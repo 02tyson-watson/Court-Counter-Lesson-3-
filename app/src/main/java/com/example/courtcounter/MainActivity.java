@@ -52,4 +52,12 @@ public class MainActivity extends AppCompatActivity {
         totalB = totalB + 1;
         displayForTeamB(totalB);
     }
+    public void reset_A(View view){
+        totalA = 0;
+        displayForTeamA(totalA);
+    }
+    public void reset_B(View view){
+        totalB = 0;
+        displayForTeamB(totalB);
+    }
 }
